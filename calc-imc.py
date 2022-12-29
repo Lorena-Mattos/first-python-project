@@ -34,3 +34,4 @@ elif imc > obesidade:
     print(nome, 'cuidado, seu IMC indica obesidade')
 
 else:
+    print('Não há indicações de IMC')
