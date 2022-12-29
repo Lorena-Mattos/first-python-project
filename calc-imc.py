@@ -12,22 +12,20 @@ int_peso = int(peso)
 
 imc = int_peso / float_altura ** 2
 
-result = f'{nome} tem {float_altura:.2f} de altura, sua idade é {idade} anos e pesa {int_peso} Kg. Seu IMC é: {imc}'
+result = f'{nome} tem {float_altura:.2f} de altura, sua idade é {idade} anos e pesa {int_peso}Kg. \nSeu IMC é: {imc}'
 print(nome, result)
 
 if imc < 18.5:
-    print(nome, 'cuidado, seu IMC indica magreza')
+    print('%s, cuidado, seu IMC indica magreza' % nome)
     
 elif imc >= 18.5:
-    print(nome, 'seu IMC está normal')
+    print('%s, seu IMC está normal' % nome)
 
 elif imc >= 24.9:
-    print(nome, 'seu IMC indica sobrepeso')
+    print('%s, seu IMC indica sobrepeso' % nome)
 
 elif imc > 30:
-    print(nome, 'cuidado, seu IMC indica obesidade')
+    print('%s, cuidado, seu IMC indica obesidade' % nome)
 
 else:
     print('Não há indicações de IMC')
-
-
